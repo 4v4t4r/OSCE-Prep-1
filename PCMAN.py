@@ -11,7 +11,7 @@ port= 21
 #
 #This shell has been brought to you by Gr1zz1y
 
-
+#PCMan FTP server 2.0.7
 #Offset is JMP ESP instruction in the actual program
 #No stack protections in .dll's or program
 #No bad characters discovered
